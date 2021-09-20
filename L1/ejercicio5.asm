@@ -9,3 +9,4 @@ a:
 	
 	li a7, 10
 	ecall
+#Va restando de uno en uno, hasta que llega a cero
