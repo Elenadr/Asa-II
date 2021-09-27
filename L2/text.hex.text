@@ -1,0 +1,5 @@
+ Address    Code        Basic                     Source
+
+0x00400000  0x00000293  addi x5,x0,0          7    	addi x5, x0, 0
+0x00400004  0x00128293  addi x5,x5,1          11   	addi x5, x5, 1  #-- x5 = x5 + 1
+0x00400008  0xffdff06f  jal x0,-2             14   	b bucle
