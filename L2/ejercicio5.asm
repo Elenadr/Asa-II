@@ -21,3 +21,5 @@
 	ecall 
  
  #-- Expresion x10 = 2x5 + 4x6 - (x7 - x8) + 15
+ #--el bit en la posicion 15 a mi me sale que es el 03
+ #--El programa tiene 13 instrucciones. Cada instrucción es de 4 bytes. Por tanto ocupa 13 * 4 = 52 bytes
