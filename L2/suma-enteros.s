@@ -15,11 +15,10 @@ bucle:
 	addi x5, x5, 1   #-- x5 = x5 + 1
 	
 	#-- Obtener termino i-simo
-	add x6, x5, x6  #-- x6 = x6 + x5
+	add x6, x6, x5  #-- x6 = x6 + x5
 	
 	#-- Repetir el bucle
 	b bucle
-
 #-- 
   #  ¿Cuantas instrucciones en código máquina tiene? 
   #-- 5 Instrucciones
@@ -28,9 +27,16 @@ bucle:
    #-- 5 instrucciones x 4 bytes = 20 bytes de memoria
   
     #Completa esta tabla, indicando la instrucción en código máquina y su dirección (alineada)
-    #Direccion 				Instruccion en codigp máquina
-    #0x0040000
-    #0x0040004
-    #0x0040008
-    #0x0040000c
+    #Direccion 			Instruccion en codigp máquina
+    
+    #0x0040000			0x00000293
 
+    #0x0040004			0x00000313
+    #0x0040008			0x00128293
+    #0x004000c			0x00530333
+    #0x0040010			0xff9ff06f
+    
+    #Completa la tabla indicando qué byte del programa está almacenado en qué dirección
+    #0x0040000
+    #0x0040001
+    
