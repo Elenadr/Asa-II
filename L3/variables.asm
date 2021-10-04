@@ -6,11 +6,11 @@
 
 v1: .word 0x12345678
 
-v2: .word 11223344
+v2: .word 0x11223344
 
-v3: .word CACABACA
+v3: .word 0xCACABACA
 
-v4: .word FABADA
+v4: .word 0x00FABADA
 
 
 	.text
