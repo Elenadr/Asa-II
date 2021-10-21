@@ -1,7 +1,5 @@
 #-- Simula el programa sucesión de fibonacci: 0,1,1,2,3,5,8,13,21,34,55..
 
-
-
 	.text
 
 	#-- Inicializamos los registros x5,x6,x7 a 0
