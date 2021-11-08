@@ -1,6 +1,7 @@
 #-- Comparar el valor de dos registros
 #-- Si son iguales imprime el mensaje "IGUALES"
 #-- Si son diferentes, se imprime "DIFERENTES"
+#-- Se utiliza la instruccion bne
 
 	.include "servicios.asm"
 	
@@ -21,29 +22,24 @@ msg_diferentes:  .string "DIFERENTES\n"
 	li t1, VALOR2
 	
 	#-- Realizar la comparacion de t0 y t1
-	beq t0, t1, iguales
+	bne t0, t1, diferentes
 	
-	#-- NO son iguales. 
-	#-- Imprmir el mensaje "DIFERENTES"
-	la a0, msg_diferentes
-	li a7, PRINT_STRING
-	ecall
-	
-	#-- Para terminar saltamos al codigo que hemos definido
-	#-- para terminar. RECUERDA: es conveniente que SOLO haya un 
-	#-- PUNTO DE SALIDA
-	b fin
-	
-	#-- Son iguales. Se imprime el mensaje IGUALES
-iguales:
-
+	#-- Son iguales
 	la a0, msg_iguales
 	li a7, PRINT_STRING
 	ecall
+	
+	#-- Ir al PUNTO DE SALIDA
+	b fin
+	
+	#-- Son diferentes
+diferentes:
 
+	la a0, msg_diferentes
+	li a7, PRINT_STRING
+	ecall
 
 	#-- PUNTO DE SALIDA
-	#-- BUENAS PRÁCTICAS DE PROGRAMACIÓN: que el punto de salida sea UNICO	
 fin:	
 	#-- Terminar
 	li a7, EXIT
