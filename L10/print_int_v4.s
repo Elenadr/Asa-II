@@ -26,9 +26,6 @@ print_int:
 	li a7, PRINT_INT
 	ecall
 	
-	#Imprimir un \n
-	li a0, '\n'
-	li a7,PRINT_CHAR
-	ecall
+	
 	#Punto de salida
 	ret

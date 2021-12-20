@@ -18,9 +18,8 @@ msg:	.string "Introduce un numero: "
 	
 	#-- Pedir un número de usuario
 	
-	#-- Llama a la función print int(num)
-	#li a0, 5
-	jal print_int #-- Print int (5)
+	#-- Llama a operar
+	jal operar #-- Print int (5)
 	
 	#-- Punto salida
 	li a7, EXIT
