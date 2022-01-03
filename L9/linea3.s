@@ -10,8 +10,7 @@
 	.text
 	
 linea3:
-	#-- IMrimir una línea de asteriscos
-	#-- de longitud n
+	#-- IMrimir caracer introducidon
 	
 	mv t0, a0
 	#-- t0. va a ser mi contador de asteriscos
