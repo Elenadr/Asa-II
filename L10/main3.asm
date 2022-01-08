@@ -1,0 +1,26 @@
+#-- Programa principal
+
+	.include "servicios.s"
+	
+	.data
+msg:	.string "Programa principal\n"
+	
+	.text
+	
+	#-- Imprimir el mensaje
+	la a0, msg
+	li a7, PRINT_STRING
+	ecall
+	
+	#-- Llamar a la funcion tarea1
+	jal tar1
+	
+	
+	#-- Imprimir el mensaje
+	la a0, msg
+	li a7, PRINT_STRING
+	ecall
+	
+	#-- Terminar
+	li a7, EXIT
+	ecall
