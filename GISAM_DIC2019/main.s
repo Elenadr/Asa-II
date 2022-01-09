@@ -8,7 +8,7 @@
 	.include "so.s"
 	.eqv MAX 1024
 	.data
-msg:	.string "Introduce una cadena: "
+msg:	.string "\nIntroduce una cadena: "
 cad:	.space MAX
 
 	.text
